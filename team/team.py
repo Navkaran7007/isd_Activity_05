@@ -6,10 +6,14 @@ __version__ = "1.0.0"
 from  player.player import Player
 
 class Team:
-    """Represents a team in a sports league."""
+    """
+    Represents a team in a sports league.
+    
+    """
 
     def __init__(self, name: str, city: str):
-        """Initializes a new instance of the Team class.
+        """
+        Initializes a new instance of the Team class.
 
         Args:
             name (str): The name of the team.
@@ -32,7 +36,8 @@ class Team:
 
     @property
     def name(self) -> str:
-        """Gets the name of the team.
+        """
+        Gets the name of the team.
 
         Returns:
             str: The name of the team instance.
@@ -42,7 +47,8 @@ class Team:
 
     @property
     def city(self) -> str:
-        """Gets the city of the team.
+        """
+        Gets the city of the team.
 
         Returns:
             str: The city of the team instance.
@@ -52,7 +58,8 @@ class Team:
 
     @property
     def players(self) -> list:
-        """Gets a list of players on the team.
+        """
+        Gets a list of players on the team.
 
         Returns:
             list: A list of players on the team instance.
@@ -61,7 +68,8 @@ class Team:
         return self.__players
 
     def add_player(self, player: Player) -> None:
-        """Adds a player to the team.
+        """
+        Adds a player to the team.
 
         Args: 
             player (Player): The player to be added to the team.
@@ -77,9 +85,10 @@ class Team:
         self.__players.append(player)
 
     def __str__(self) -> str:
-        """Returns a string representation of the team.
+        """
+        Returns a string representation of the team.
 
-        Returns
+        Returns:
             str: A string containing the team's details.
         """
 

@@ -9,10 +9,15 @@ from PySide6.QtWidgets import QWidget, QVBoxLayout, QTableWidget, \
 from player.player import Player
 
 class SportsApp(QWidget):
-    """Represents the main window of the application."""
+    """
+    Represents the main window of the application.
+    
+    """
 
     def __init__(self):
-        """Initializes a new instance of the SportsApp class."""
+        """
+        Initializes a new instance of the SportsApp class.
+        """
 
         super().__init__()
         self.__initialize_widgets()
@@ -20,7 +25,9 @@ class SportsApp(QWidget):
         self.button.clicked.connect(self.__show_message)
 
     def __initialize_widgets(self):
-        """Initializes the widgets on this window."""
+        """
+        Initializes the widgets on this window.
+        """
 
         self.setWindowTitle("Sports League")
 
@@ -55,6 +62,8 @@ class SportsApp(QWidget):
         self.setLayout(layout)
 
     def __show_message(self):
-        """Displays a welcome message to the user."""
+        """
+        Displays a welcome message to the user.
+        """
         
         QMessageBox.information(self, "Welcome", "Welcome to the Team!")

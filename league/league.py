@@ -1,15 +1,20 @@
 """This module defines the League class."""
 
 __author__ = "ACE Faculty"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
+__credits__ = "Navkaran Singh Sidhu"
 
 from team.team import Team
 
 class League:
-    """Represents a league in a sports organization."""
-
+    """
+    Represents a league in a sports organization.
+    
+    """
+    
     def __init__(self, name: str):
-        """Initializes a new instance of the League class.
+        """
+        Initializes a new instance of the League class.
 
         Args: 
             name (str): The name of the league.
@@ -26,13 +31,19 @@ class League:
 
     @property
     def name(self) -> str:
-        """Gets the name of the league."""
+        """
+        Gets the name of the league.
+
+        Returns:
+            The name of the league.
+        """
 
         return self.__name
 
     @property
     def teams(self) -> list:
-        """Gets the list of teams in the league.
+        """
+        Gets the list of teams in the league.
 
         Returns:
             A list of Team objects.
@@ -40,8 +51,9 @@ class League:
 
         return self.__teams
 
-    def add_team(self, team: list) -> None:
-        """Adds a team to the league.
+    def add_team(self, team: Team) -> None:
+        """
+        Adds a team to the league.
 
         Args:
             team (Team): The team to be added to the league.
@@ -56,9 +68,10 @@ class League:
         self.__teams.append(team)
 
     def __str__(self) -> str:
-        """Returns a string representation of the league.
+        """
+        Returns a string representation of the league.
 
-        Returns
+        Returns:
             str: A string containing the league's details.
         """
 

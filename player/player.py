@@ -2,19 +2,24 @@
 
 __author__ = "ACE Faculty"
 __version__ = "1.0.0"
+__credits__ = "editor name"
 
 class Player:
-    """Represents a player on a sports team."""
+    """
+    Represents a player on a sports team.
+    
+    """
 
     def __init__(self, name: str, age: int, position: str):
-        """Initializes a new instance of the Player class.
+        """
+        Initializes a new instance of the Player class.
 
         Args:
             name (str): The name of the player.
             age (int): The age of the player.
             position (str): The position of the player on the team.
 
-        Raises
+        Raises:
             ValueError: Raised when the name is not a string, age is not
                 an integer, or position is not a string.
         """
@@ -34,7 +39,8 @@ class Player:
 
     @property
     def name(self) -> str:
-        """Gets the name of the player.
+        """
+        Gets the name of the player.
 
         Returns:
             str: The name of the player instance.
@@ -44,7 +50,8 @@ class Player:
 
     @property
     def age(self) -> int:
-        """Gets the age of the player.
+        """
+        Gets the age of the player.
 
         Returns:
             int: The age of the player instance.
@@ -54,7 +61,8 @@ class Player:
 
     @property
     def position(self) -> str:
-        """Gets the position of the player.
+        """
+        Gets the position of the player.
 
         Returns:
             str: The position of the player instance.
@@ -63,9 +71,10 @@ class Player:
         return self.__position
 
     def __str__(self) -> str:
-        """Returns a string representation of the player.
+        """
+        Returns a string representation of the player.
 
-        Returns
+        Returns:
             str: A string containing the player's details.
         """
 
